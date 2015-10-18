@@ -1,6 +1,10 @@
 #
 # See: http://jekyllrb.com/docs/configuration/
 #
+gems:
+    - jekyll-sitemap
+    - jekyll-feed
+
 exclude: [Gemfile, Gemfile.lock]
 
 defaults:
