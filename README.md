@@ -1,8 +1,12 @@
 # Page Management #
 
+## Setup ##
+
 Install dependencies:
 
     bundler install
+
+## Creation ##
 
 Start Jekyll locally:
 
