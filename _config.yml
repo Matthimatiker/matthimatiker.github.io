@@ -4,6 +4,8 @@
 gems:
     - jekyll-sitemap
     - jekyll-feed
+    - jekyll-mentions
+    - jekyll-redirect-from
 
 exclude: [Gemfile, Gemfile.lock]
 
