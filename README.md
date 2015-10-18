@@ -1,5 +1,7 @@
 # Page Management #
 
+[![Build Status](https://travis-ci.org/Matthimatiker/matthimatiker.github.io.svg?branch=master)](https://travis-ci.org/Matthimatiker/matthimatiker.github.io)
+
 ## Setup ##
 
 Install dependencies:
