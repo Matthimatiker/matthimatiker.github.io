@@ -5,6 +5,8 @@
 
 Hi there, my name is Matthias. I am a passionate software developer and Head of an Imaginary Software Architecture Advisory Board (HISAAB).
 
-Check out my GitHub profile (@Matthimatiker) to find out more about my current side projects.
+I am currently employed at [webfactory GmbH](http://www.webfactory.de) (@webfactory), the fairest company I was allowed to work for so far. We are a team of experienced developers and designers that focuses on the development of interesting web applications.
 
-I enjoy funny puns. And the not so funny ones, too.
+Check out my GitHub profile (@Matthimatiker) if you want to find out more about my current side projects.
+
+Personal information: I enjoy funny puns. And the not so funny ones, too.
