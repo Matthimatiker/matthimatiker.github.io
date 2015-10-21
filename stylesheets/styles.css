@@ -42,7 +42,6 @@ a small {
   font-size:11px;
   color:#777;
   margin-top:-0.6em;
-  display:block;
 }
 
 .wrapper {
@@ -102,9 +101,8 @@ header {
 
 header ul {
   list-style:none;
-  height:40px;
 
-  padding:0;
+  padding:5px;
 
   background: #eee;
   background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
@@ -127,7 +125,6 @@ strong {
 
 header ul a strong {
   font-size:14px;
-  display:block;
   color:#222;
 }
 
@@ -183,7 +180,6 @@ footer {
   }
 
   header ul {
-    position:absolute;
     right:50px;
     top:52px;
   }
