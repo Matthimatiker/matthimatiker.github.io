@@ -8,7 +8,9 @@ Install dependencies:
 
     bundler install
 
-## Creation ##
+## Usage ##
+
+## Start Local Server ##
 
 Start Jekyll locally:
 
@@ -16,9 +18,19 @@ Start Jekyll locally:
 
 Access the page at [http://localhost:4000](http://localhost:4000).
 
+### Active Navigation ###
+
+The active navigation item can be controlled via ``active_navigation`` variable in the front matter:
+
+    ---
+    active_navigation: "about"
+    ---
+    
+If omitted, then the "blog" item will be active.
+
 ## Troubleshooting ##
 
-### Error when building native extensions ##
+### Error When Building Native Extensions ##
 
 If you experience errors during ``bundler install`` when building native extensions and you just updated MacOS, then try the following: 
 
