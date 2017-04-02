@@ -7,7 +7,8 @@ gems:
     - jekyll-mentions
     - jekyll-redirect-from
 
-exclude: [Gemfile, Gemfile.lock, vendor]
+# Do not publish these files with the site build.
+exclude: [Gemfile, Gemfile.lock, vendor, README.md, CNAME]
 
 defaults:
     -
