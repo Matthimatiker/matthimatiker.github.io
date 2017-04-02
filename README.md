@@ -12,7 +12,7 @@ Install dependencies:
 
 Start Jekyll locally:
 
-    bundle exec jekyll serve
+    bundle exec jekyll serve --drafts
 
 Access the page at [http://localhost:4000](http://localhost:4000).
 
