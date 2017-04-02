@@ -138,6 +138,10 @@ section {
   margin-bottom: 20px;
 }
 
+.nav-tabs > li.active > a:hover {
+  cursor: pointer;
+}
+
 small {
   font-size:11px;
 }
