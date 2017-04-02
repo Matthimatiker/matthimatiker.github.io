@@ -134,6 +134,10 @@ section {
   padding-bottom:50px;
 }
 
+.nav.nav-tabs {
+  margin-bottom: 20px;
+}
+
 small {
   font-size:11px;
 }

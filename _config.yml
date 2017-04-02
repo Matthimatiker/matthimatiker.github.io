@@ -15,3 +15,5 @@ defaults:
             path: "" # an empty string here means all files in the project
         values:
             layout: "default"
+            # The blog navigation is active per default.
+            active_navigation: "blog"

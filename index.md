@@ -1,5 +1,6 @@
 ---
 title: "About Me"
+active_navigation: "about"
 ---
 
 Hi there, my name is Matthias. I am a passionate software developer and Head of an Imaginary Software Architecture Advisory Board (HISAAB).
