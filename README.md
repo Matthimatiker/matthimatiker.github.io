@@ -45,3 +45,4 @@ Retry the installation afterwards.
 - [Features](https://help.github.com/categories/github-pages-features)
 - [Troubleshooting](https://help.github.com/categories/github-pages-troubleshooting)
 - [Configuring builds](http://jekyllrb.com/docs/continuous-integration/)
+- [Template Filters](http://jekyllrb.com/docs/templates/)
