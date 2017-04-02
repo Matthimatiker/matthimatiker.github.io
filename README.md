@@ -16,6 +16,17 @@ Start Jekyll locally:
 
 Access the page at [http://localhost:4000](http://localhost:4000).
 
+## Troubleshooting ##
+
+### Error when building native extensions ##
+
+If you experience errors during ``bundler install`` when building native extensions and you just updated MacOS, then try the following: 
+
+    xcode-select --install
+    sudo xcodebuild -license accept
+    
+Retry the installation afterwards.
+
 ## GitHub Pages documentation ##
 
 - [Basics](https://help.github.com/categories/github-pages-basics)
