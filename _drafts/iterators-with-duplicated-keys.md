@@ -4,6 +4,8 @@ title: "Lost In Iteration"
 
 **TL;DR**: tbd
 
+### Problem Context ###
+
 When writing tests I often find myself using ``iterator_to_array`` to quickly inspect the items in a traversable object:
 
     $items = iterator_to_array($myTraversableObject);
@@ -38,8 +40,9 @@ The idea is simple: An ``\AppendIterator`` is used to concatenate several other 
       // to think about duplicate-key edge cases:
       $items = iterator_to_array(new NumericKeysIterator($combined));
 
-iterator_to_array( ..., true) if only interested in elements
-think about the keys of your traversables
+### Solution ###
+
+iterator_to_array( ..., true)
 
 
     class NumericKeysIterator extends \IteratorIterator {
@@ -65,3 +68,8 @@ think about the keys of your traversables
             $this->key++;
         }
     }
+
+### Conclusion ###
+
+iterator_to_array( ..., true) if only interested in elements
+think about the keys of your traversables
