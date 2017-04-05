@@ -2,17 +2,17 @@
 title: "Lost In Iteration"
 ---
 
-**TL;DR**: tbd
+**TL;DR**: TODO tbd
 
 ### Problem Context ###
 
-When writing tests I often find myself using ``iterator_to_array`` to quickly inspect the items in a traversable object:
+When writing tests I often find myself using ``iterator_to_array()`` to quickly inspect the items in a traversable object:
 
     $items = iterator_to_array($myTraversableObject);
 
 Converting an object into an array this way allows me to rely on the huge amount of PHP's array functions for further checks.
 
-However, there is a catch when using ``iterator_to_array`` without its second argument: Usually your are only interested in the elements, but ``iterator_to_array`` keeps the keys of the ``\Traversable`` per default. And it is perfectly fine when a ``\Traversable`` uses the same key multiple times.  
+However, there is a catch when using ``iterator_to_array()`` without its second argument: Usually your are only interested in the elements, but ``iterator_to_array()`` keeps the keys of the ``\Traversable`` per default. And it is perfectly fine when a ``\Traversable`` uses the same key multiple times.  
 Wonder how this can happen (accidentally)? Have a look at this simple example:
  
     $firstPart = new \ArrayIterator(array('a', 'b', 'c'));
@@ -23,27 +23,29 @@ Wonder how this can happen (accidentally)? Have a look at this simple example:
  
 The idea is simple: An ``\AppendIterator`` is used to concatenate several other iterators. The keys of the source iterators (``$firstPart`` and ``$secondPart``) were not explicitly specified as they are not important. Each source iterator uses numeric keys in the range ``0..2``.
 
-
+This works as expected in *most* cases...
 
     foreach ($combined as $value) {
         // This loop iterates over all 6 values.
     }
+
+... in contrast to that...
+
+    iterator_to_array($combined);
  
-      // This returns only 3 values as items with same keys are overwritten.
-      // This behavior is... unexpected at best.
-      $items = iterator_to_array($combined);
- 
-      // This returns all 6 values as the keys are not taken into account:
-      $items = iterator_to_array($combined, false);
- 
-      // This returns all 6 items and the caller of the iterator does not have
-      // to think about duplicate-key edge cases:
-      $items = iterator_to_array(new NumericKeysIterator($combined));
+... returns only the 3 values ``["d", "e", "f"]`` as elements with same keys are overwritten.
+In a scenario like the one above this behavior is... unexpected at best. 
 
 ### Solution ###
 
-iterator_to_array( ..., true)
+The second parameter of ``iterator_to_array()`` controls the handling of keys. When setting it to ``false``, the keys of the traversed object are ignored and a numerically indexed array with all values is returned:
 
+    iterator_to_array($combined, false);
+
+This returns all 6 values (``["a", "b", "c", "d", "e", "f"]``) as the keys are not taken into account.  
+However, there is a drawback: Each caller has to be aware of the possible problem and must remember to explicitly define the key handling behavior.
+
+If the desired behavior is a numerically indexed concatenation of several iterators, then that should be modeled explicitly. We can rely on established design patterns and create a simple [decorator](TODO link) that enforces the desired key behavior:
 
     class NumericKeysIterator extends \IteratorIterator {
         /**
@@ -57,7 +59,7 @@ iterator_to_array( ..., true)
         }
     
         /**
-         * @return int
+         * @return integer
          */
         public function key() {
             return $this->key;
@@ -69,7 +71,20 @@ iterator_to_array( ..., true)
         }
     }
 
+    // This returns all 6 items and the caller of the iterator does not have
+    // to think about duplicate-key edge cases:
+    $combined = new NumericKeysIterator($combined);
+    $items = iterator_to_array($combined);
+    
+iterator_to_array( ..., true)
+
+
+    
+
 ### Conclusion ###
 
+TODO
+
+when working with iterators...
 iterator_to_array( ..., true) if only interested in elements
 think about the keys of your traversables
