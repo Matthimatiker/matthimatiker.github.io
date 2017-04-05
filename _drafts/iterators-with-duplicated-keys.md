@@ -71,15 +71,12 @@ If the desired behavior is a numerically indexed concatenation of several iterat
         }
     }
 
-    // This returns all 6 items and the caller of the iterator does not have
-    // to think about duplicate-key edge cases:
+When plugging this together, we get an iterator whose keys are always ascending, numerical values:
+
     $combined = new NumericKeysIterator($combined);
     $items = iterator_to_array($combined);
     
-iterator_to_array( ..., true)
-
-
-    
+Therefore, ``iterator_to_array()`` returns all 6 items even if the default key handling is used and the caller does not have to think about duplicate-key edge cases.
 
 ### Conclusion ###
 
