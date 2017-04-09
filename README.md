@@ -39,7 +39,7 @@ If you experience errors during ``bundler install`` when building native extensi
     
 Retry the installation afterwards.
 
-## GitHub Pages documentation ##
+## References ##
 
 - [Basics](https://help.github.com/categories/github-pages-basics)
 - [Features](https://help.github.com/categories/github-pages-features)
