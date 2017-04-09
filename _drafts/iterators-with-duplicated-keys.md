@@ -71,7 +71,7 @@ If the desired behavior is a numerically indexed concatenation of several iterat
         }
     }
 
-When plugging this together, we get an iterator whose keys are always ascending, numerical values:
+When plugging this together, we get an iterator whose keys are always ascending integer values:
 
     $combined = new NumericKeysIterator($combined);
     $items = iterator_to_array($combined);
