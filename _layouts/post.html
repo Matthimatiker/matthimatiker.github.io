@@ -22,13 +22,15 @@ layout: default
         {{ content }}
     </div>
 
-    <nav>
-        {% if page.previous %}
-            <a class="prev" href="{{ page.previous.url }}">&laquo; {{page.previous.title}}</a>
-        {% endif %}
+    <footer>
+        <nav>
+            {% if page.previous %}
+                <a class="prev" href="{{ page.previous.url }}">&laquo; {{page.previous.title}}</a>
+            {% endif %}
 
-        {% if page.next %}
-            <a class="next" href="{{ page.next.url }}">{{page.next.title}} &raquo;</a>
-        {% endif %}
-    </nav>
+            {% if page.next %}
+                <a class="next" href="{{ page.next.url }}">{{page.next.title}} &raquo;</a>
+            {% endif %}
+        </nav>
+    </footer>
 </article>
