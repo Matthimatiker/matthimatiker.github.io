@@ -47,3 +47,4 @@ Retry the installation afterwards.
 - [Configuring builds](http://jekyllrb.com/docs/continuous-integration/)
 - [Template Filters](http://jekyllrb.com/docs/templates/)
 - [Blog Post Schema](http://schema.org/BlogPosting)
+- [Blog Post Schema Example](https://gist.github.com/gregrickaby/5917114)
