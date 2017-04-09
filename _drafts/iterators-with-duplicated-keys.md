@@ -45,7 +45,7 @@ The second parameter of ``iterator_to_array()`` controls the handling of keys. W
 This returns all 6 values (``["a", "b", "c", "d", "e", "f"]``) as the keys are not taken into account.  
 However, there is a drawback: Each caller has to be aware of the possible problem and must remember to explicitly define the key handling behavior.
 
-If the desired behavior is a numerically indexed concatenation of several iterators, then that should be modeled explicitly. We can rely on established design patterns and create a simple [decorator](TODO link) that enforces the desired key behavior:
+If the desired behavior is a numerically indexed concatenation of several iterators, then that should be modeled explicitly. We can rely on established design patterns and create a simple [decorator](https://en.wikipedia.org/wiki/Decorator_pattern) that enforces the desired key behavior:
 
     class NumericKeysIterator extends \IteratorIterator {
         /**
