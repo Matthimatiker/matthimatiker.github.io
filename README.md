@@ -46,3 +46,4 @@ Retry the installation afterwards.
 - [Troubleshooting](https://help.github.com/categories/github-pages-troubleshooting)
 - [Configuring builds](http://jekyllrb.com/docs/continuous-integration/)
 - [Template Filters](http://jekyllrb.com/docs/templates/)
+- [Blog Post Schema](http://schema.org/BlogPosting)
