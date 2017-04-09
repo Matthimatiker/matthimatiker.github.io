@@ -2,7 +2,7 @@
 title: "Lost In Iteration"
 ---
 
-**TL;DR**: When using ``iterator_to_array()`` with default parameters, some extracted elements are lost if they share the same key. 
+**TL;DR**: _When using ``iterator_to_array()`` with default parameters, some extracted elements are lost if they share the same key._ 
 
 ### Problem Context ###
 
