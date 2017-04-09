@@ -8,10 +8,12 @@ layout: default
             {{ page.date | date_to_string }}
         </time>
 
-        <h2 itemprop="name">{{ page.title }}</h2>
+        <h2 itemprop="headline">{{ page.title }}</h2>
     </header>
 
-    {{ content }}
+    <div itemprop="articleBody">
+        {{ content }}
+    </div>
 
     <nav>
         {% if page.previous %}
