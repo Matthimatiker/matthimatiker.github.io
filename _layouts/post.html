@@ -4,15 +4,16 @@ layout: default
 
 <article itemscope itemtype="http://schema.org/BlogPosting">
     <header>
-        <time itemprop="datePublished" datetime="{{ page.date | date: '%Y-%m-%d' }}">
-            {{ page.date | date_to_string }}
-        </time>
-
         <h2 itemprop="headline">{{ page.title }}</h2>
 
-        <p itemprop="author">
-            <span itemscope itemtype="http://schema.org/Person">
-                Posted by <span itemprop="name">Matthias Molitor</span>
+        <p>
+            <time itemprop="datePublished" datetime="{{ page.date | date: '%Y-%m-%d' }}">
+                {{ page.date | date_to_string }}
+            </time>
+            <span itemprop="author">
+                <span itemscope itemtype="http://schema.org/Person">
+                    by <span itemprop="name">Matthias Molitor</span>
+                </span>
             </span>
         </p>
     </header>
