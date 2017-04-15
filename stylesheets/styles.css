@@ -166,12 +166,6 @@ footer {
     margin:0;
   }
 
-  .page-header, section, footer {
-    float:none;
-    position:static;
-    width:auto;
-  }
-
   .page-header {
     padding-right:320px;
   }
