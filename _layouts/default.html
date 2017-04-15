@@ -44,14 +44,16 @@
             </header>
 
             <section class="content-section">
-                <ul class="nav nav-tabs">
-                    <li role="presentation" class="{% if page.active_navigation == 'about' %}active{% endif %}">
-                        <a href="{% link index.md %}">About Me</a>
-                    </li>
-                    <li role="presentation" class="{% if page.active_navigation == 'blog' %}active{% endif %}">
-                        <a href="{% link blog.md %}">Blog</a>
-                    </li>
-                </ul>
+                <nav>
+                    <ul class="nav nav-tabs">
+                        <li role="presentation" class="{% if page.active_navigation == 'about' %}active{% endif %}">
+                            <a href="{% link index.md %}">About Me</a>
+                        </li>
+                        <li role="presentation" class="{% if page.active_navigation == 'blog' %}active{% endif %}">
+                            <a href="{% link blog.md %}">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
                 {{ content }}
             </section>
 
