@@ -153,6 +153,20 @@ hr {
   margin:0 0 20px;
 }
 
+.previous-post-link, .next-post-link {
+  display: inline;
+  width: 50%;
+}
+
+.previous-post-link {
+  float: left;
+}
+
+.next-post-link {
+  float: right;
+  text-align: right;
+}
+
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {
