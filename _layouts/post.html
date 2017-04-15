@@ -23,13 +23,14 @@ layout: default
     </div>
 
     <footer>
+        <hr />
         <nav>
             {% if page.previous %}
-                <a class="prev" rel="prev" href="{{ page.previous.url }}">&laquo; {{page.previous.title}}</a>
+                <a class="previous-post" rel="prev" href="{{ page.previous.url }}">&laquo; {{page.previous.title}}</a>
             {% endif %}
 
             {% if page.next %}
-                <a class="next" rel="next" href="{{ page.next.url }}">{{page.next.title}} &raquo;</a>
+                <a class="next-post" rel="next" href="{{ page.next.url }}">{{page.next.title}} &raquo;</a>
             {% endif %}
         </nav>
     </footer>
