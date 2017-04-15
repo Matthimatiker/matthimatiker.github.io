@@ -1,6 +1,7 @@
 ---
 title: "About Me"
 active_navigation: "about"
+edit_link: false
 ---
 
 ## About Me ##
