@@ -10,11 +10,13 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
 
-        <!-- Styles for "Edit on GitHub" ribbon -->
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.1/gh-fork-ribbon.min.css" />
-        <!--[if lt IE 9]>
-            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.1/gh-fork-ribbon.ie.min.css" />
-        <![endif]-->
+        {% if page.edit_link %}
+            <!-- Styles for "Edit on GitHub" ribbon -->
+            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.1/gh-fork-ribbon.min.css" />
+            <!--[if lt IE 9]>
+                <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.1/gh-fork-ribbon.ie.min.css" />
+            <![endif]-->
+        {% endif %}
 
         <link rel="stylesheet" href="/stylesheets/styles.css">
 
@@ -67,7 +69,9 @@
             </div>
         </div>
 
-        <a class="github-fork-ribbon" href="https://github.com/Matthimatiker/matthimatiker.github.io/blob/master/{{ page.path }}" title="Edit me on GitHub">Edit me on GitHub</a>
+        {% if page.edit_link %}
+            <a class="github-fork-ribbon" href="https://github.com/Matthimatiker/matthimatiker.github.io/blob/master/{{ page.path }}" title="Edit me on GitHub">Edit me on GitHub</a>
+        {% endif %}
 
         <script src="/javascripts/scale.fix.js"></script>
         <script>
