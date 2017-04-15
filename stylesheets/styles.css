@@ -9,7 +9,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color:#222;
-  margin:0 0 20px;
 }
 
 p, ul, ol, table, pre, dl {
@@ -30,6 +29,14 @@ h2 {
 
 h3, h4, h5, h6 {
   color:#494949;
+}
+
+.article-header {
+  margin-bottom: 20px;
+}
+
+.article-header h2 {
+  margin-bottom: 5px;
 }
 
 a {
