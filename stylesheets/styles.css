@@ -94,12 +94,12 @@ img {
   max-width:100%;
 }
 
-header {
+.page-header {
   width:270px;
   float:left;
 }
 
-header ul {
+.page-header ul {
   list-style:none;
 
   padding:5px;
@@ -123,7 +123,7 @@ strong {
   font-weight:700;
 }
 
-header ul a strong {
+.page-header ul a strong {
   font-size:14px;
   color:#222;
 }
@@ -166,13 +166,13 @@ footer {
     margin:0;
   }
 
-  header, section, footer {
+  .page-header, section, footer {
     float:none;
     position:static;
     width:auto;
   }
 
-  header {
+  .page-header {
     padding-right:320px;
   }
 
@@ -183,11 +183,11 @@ footer {
     margin:0 0 20px;
   }
 
-  header a small {
+  .page-header a small {
     display:inline;
   }
 
-  header ul {
+  .page-header ul {
     right:50px;
     top:52px;
   }
@@ -198,11 +198,11 @@ footer {
     word-wrap:break-word;
   }
 
-  header {
+  .page-header {
     padding:0;
   }
 
-  header ul, header p.view {
+  .page-header ul, .page-header p.view {
     position:static;
   }
 
@@ -216,7 +216,7 @@ footer {
     padding:15px;
   }
 
-  header ul {
+  .page-header ul {
     display:none;
   }
 }
