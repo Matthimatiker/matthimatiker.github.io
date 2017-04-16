@@ -28,6 +28,26 @@ The active navigation item can be controlled via ``active_navigation`` variable 
     
 If omitted, then the "blog" item will be active.
 
+### Comments ###
+
+The ``comments`` variable in the front matter controls if comments are allowed:
+
+    ---
+    comments: true
+    ---
+
+Per default, comments are enabled for blog posts and disabled for other pages.
+    
+### Edit Link ###
+
+The ``edit_link`` variable in the front matter controls if a "edit on GitHub" ribbon is shown in the upper right corner of the page:
+
+    ---
+    edit_link: true
+    ---
+
+Per default edit links are enabled for blog posts and disabled for other pages.
+
 ## Troubleshooting ##
 
 ### Error When Building Native Extensions ##
