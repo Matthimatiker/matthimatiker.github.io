@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "You Can Always Refcount On Me: Avoiding Circular References When Storing Closures in Attributes"
 ---
 

@@ -1,5 +1,4 @@
 ---
-layout: post
 ---
 
 # Basic Symfony application testing at zero costs #
