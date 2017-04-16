@@ -22,3 +22,5 @@ defaults:
             active_navigation: "blog"
             # Show "Edit on GitHub" ribbon?
             edit_link: true
+            # Allow comments?
+            comments: true
