@@ -10,7 +10,7 @@ Install dependencies:
 
 ## Usage ##
 
-## Start Local Server ##
+### Start Local Server ###
 
 Start Jekyll locally:
 
