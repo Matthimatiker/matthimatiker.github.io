@@ -10,6 +10,8 @@ gems:
 # Do not publish these files with the site build.
 exclude: [Gemfile, Gemfile.lock, vendor, README.md, CNAME]
 
+timezone: "Europe/Berlin"
+
 defaults:
     -
         scope:
