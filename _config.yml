@@ -21,4 +21,16 @@ defaults:
             # The blog navigation is active per default.
             active_navigation: "blog"
             # Show "Edit on GitHub" ribbon?
+            edit_link: false
+            # Allow comments?
+            comments: false
+    # Overwrite some settings for posts.
+    -
+        scope:
+            path: ""
+            type: "posts"
+        values:
+            layout: "post"
+            active_navigation: "blog"
             edit_link: true
+            comments: true

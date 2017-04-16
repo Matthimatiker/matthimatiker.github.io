@@ -164,6 +164,7 @@ hr {
 .previous-post-link, .next-post-link {
   display: inline;
   width: 50%;
+  margin-bottom: 20px;
 }
 
 .previous-post-link {

@@ -65,6 +65,10 @@
                 </nav>
                 <main>
                     {{ content }}
+                    {% if page.comments %}
+                        <hr />
+                        {% include disqus.html %}
+                    {% endif %}
                 </main>
             </div>
         </div>

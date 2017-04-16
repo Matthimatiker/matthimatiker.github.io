@@ -1,5 +1,4 @@
 ---
-layout: post
 ---
 
 must be owner (double-check!)
