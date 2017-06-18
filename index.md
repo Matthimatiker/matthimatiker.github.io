@@ -6,9 +6,8 @@ edit_link: false
 
 ## About Me ##
 
-Hi there, my name is Matthias. I am a passionate software developer and Head of an Imaginary Software Architecture Advisory Board (HISAAB).
-
-I am currently employed at [webfactory GmbH](http://www.webfactory.de) (@webfactory), the fairest company I was allowed to work for so far. We are a team of experienced developers and designers that focuses on the creation of interesting web applications.
+Hi there, my name is Matthias. I am a passionate software developer and I am working as a freelance web developer.  
+I focus on (but I am not limited to) web projects with PHP/Symfony. I rely heavily on Test Driven Development, Pair Programming and team collaboration.
 
 Check out my GitHub profile (@Matthimatiker) if you want to find out more about my current side projects.
 
