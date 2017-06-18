@@ -78,6 +78,8 @@
         {% endif %}
 
         <script src="/javascripts/scale.fix.js"></script>
-        {% include google-analytics.html %}
+        {% if jekyll.environment == 'production' %}
+            {% include google-analytics.html %}
+        {% endif %}
     </body>
 </html>
