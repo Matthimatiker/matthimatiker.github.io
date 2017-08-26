@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  web:
+    image: ruby:2.4
+    volumes:
+      - .:/usr/src/web:delegated
+    command: "bash -c 'cd /usr/src/web && bundle install && bundle exec jekyll serve --host=0.0.0.0 --port=4000 --drafts'"
+    environment:
+      # Change the bundle path to ensure that gems do not have to be completely re-installed on each startup.
+      BUNDLE_PATH: "/usr/src/web/.gems"
+    restart: always
+    ports:
+      - "4000:4000"
