@@ -4,19 +4,30 @@
 
 ## Setup ##
 
-Install dependencies:
+You can start the server via Docker or directly on the host.
+
+### Start Server via Docker ###
+
+Simply execute the following command, dependencies are installed automatically:
+
+    docker-compose up
+
+### Start Local Server on Host ###
+
+Install dependencies (you have to do this once):
 
     bundler install
-
-## Usage ##
-
-### Start Local Server ###
 
 Start Jekyll locally:
 
     bundle exec jekyll serve --drafts
 
+### Open Website ###
+
 Access the page at [http://localhost:4000](http://localhost:4000).
+
+
+## Usage ##
 
 ### Active Navigation ###
 
