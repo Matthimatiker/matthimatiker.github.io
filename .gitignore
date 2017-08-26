@@ -1,2 +1,5 @@
 .idea/
 _site/
+
+# The gems cach dir for Docker.
+.gems
